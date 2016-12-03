@@ -1,7 +1,7 @@
 Caffe Wide-Residual-Network (WRN) Generator
 ===========================================
 
-This generator is a reimplementation of Wide Residual Networks (WRN).
+This generator is a reimplementation of Wide Residual Networks (WRN) [[1]](#ref1).
 Full-Pre-Activation Residual Units from [[2]](#ref2) are used with two
 convolutional units of size 3x3 per residual unit. Support for bottleneck
 residual units (3 convolutional layers: 1x1, 3x3, 1x1) will be added in the
