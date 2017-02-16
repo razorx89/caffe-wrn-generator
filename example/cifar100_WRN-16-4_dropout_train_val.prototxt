@@ -61,6 +61,15 @@ layer {
   top: "res2_1a_1_bn"
 }
 layer {
+  name: "res2_1a_1_scale"
+  type: "Scale"
+  bottom: "res2_1a_1_bn"
+  top: "res2_1a_1_bn"
+  scale_param {
+    bias_term: true
+  }
+}
+layer {
   name: "res2_1a_1_relu"
   type: "ReLU"
   bottom: "res2_1a_1_bn"
@@ -87,6 +96,15 @@ layer {
   type: "BatchNorm"
   bottom: "res2_1a_1_3x3_s1"
   top: "res2_1a_1_3x3_s1"
+}
+layer {
+  name: "res2_1a_2_scale"
+  type: "Scale"
+  bottom: "res2_1a_1_3x3_s1"
+  top: "res2_1a_1_3x3_s1"
+  scale_param {
+    bias_term: true
+  }
 }
 layer {
   name: "res2_1a_2_relu"
@@ -152,6 +170,15 @@ layer {
   top: "res2_2a_1_bn"
 }
 layer {
+  name: "res2_2a_1_scale"
+  type: "Scale"
+  bottom: "res2_2a_1_bn"
+  top: "res2_2a_1_bn"
+  scale_param {
+    bias_term: true
+  }
+}
+layer {
   name: "res2_2a_1_relu"
   type: "ReLU"
   bottom: "res2_2a_1_bn"
@@ -178,6 +205,15 @@ layer {
   type: "BatchNorm"
   bottom: "res2_2a_1_3x3_s1"
   top: "res2_2a_1_3x3_s1"
+}
+layer {
+  name: "res2_2a_2_scale"
+  type: "Scale"
+  bottom: "res2_2a_1_3x3_s1"
+  top: "res2_2a_1_3x3_s1"
+  scale_param {
+    bias_term: true
+  }
 }
 layer {
   name: "res2_2a_2_relu"
@@ -227,6 +263,15 @@ layer {
   top: "res3_1a_1_bn"
 }
 layer {
+  name: "res3_1a_1_scale"
+  type: "Scale"
+  bottom: "res3_1a_1_bn"
+  top: "res3_1a_1_bn"
+  scale_param {
+    bias_term: true
+  }
+}
+layer {
   name: "res3_1a_1_relu"
   type: "ReLU"
   bottom: "res3_1a_1_bn"
@@ -253,6 +298,15 @@ layer {
   type: "BatchNorm"
   bottom: "res3_1a_1_3x3_s2"
   top: "res3_1a_1_3x3_s2"
+}
+layer {
+  name: "res3_1a_2_scale"
+  type: "Scale"
+  bottom: "res3_1a_1_3x3_s2"
+  top: "res3_1a_1_3x3_s2"
+  scale_param {
+    bias_term: true
+  }
 }
 layer {
   name: "res3_1a_2_relu"
@@ -318,6 +372,15 @@ layer {
   top: "res3_2a_1_bn"
 }
 layer {
+  name: "res3_2a_1_scale"
+  type: "Scale"
+  bottom: "res3_2a_1_bn"
+  top: "res3_2a_1_bn"
+  scale_param {
+    bias_term: true
+  }
+}
+layer {
   name: "res3_2a_1_relu"
   type: "ReLU"
   bottom: "res3_2a_1_bn"
@@ -344,6 +407,15 @@ layer {
   type: "BatchNorm"
   bottom: "res3_2a_1_3x3_s1"
   top: "res3_2a_1_3x3_s1"
+}
+layer {
+  name: "res3_2a_2_scale"
+  type: "Scale"
+  bottom: "res3_2a_1_3x3_s1"
+  top: "res3_2a_1_3x3_s1"
+  scale_param {
+    bias_term: true
+  }
 }
 layer {
   name: "res3_2a_2_relu"
@@ -393,6 +465,15 @@ layer {
   top: "res4_1a_1_bn"
 }
 layer {
+  name: "res4_1a_1_scale"
+  type: "Scale"
+  bottom: "res4_1a_1_bn"
+  top: "res4_1a_1_bn"
+  scale_param {
+    bias_term: true
+  }
+}
+layer {
   name: "res4_1a_1_relu"
   type: "ReLU"
   bottom: "res4_1a_1_bn"
@@ -419,6 +500,15 @@ layer {
   type: "BatchNorm"
   bottom: "res4_1a_1_3x3_s2"
   top: "res4_1a_1_3x3_s2"
+}
+layer {
+  name: "res4_1a_2_scale"
+  type: "Scale"
+  bottom: "res4_1a_1_3x3_s2"
+  top: "res4_1a_1_3x3_s2"
+  scale_param {
+    bias_term: true
+  }
 }
 layer {
   name: "res4_1a_2_relu"
@@ -484,6 +574,15 @@ layer {
   top: "res4_2a_1_bn"
 }
 layer {
+  name: "res4_2a_1_scale"
+  type: "Scale"
+  bottom: "res4_2a_1_bn"
+  top: "res4_2a_1_bn"
+  scale_param {
+    bias_term: true
+  }
+}
+layer {
   name: "res4_2a_1_relu"
   type: "ReLU"
   bottom: "res4_2a_1_bn"
@@ -510,6 +609,15 @@ layer {
   type: "BatchNorm"
   bottom: "res4_2a_1_3x3_s1"
   top: "res4_2a_1_3x3_s1"
+}
+layer {
+  name: "res4_2a_2_scale"
+  type: "Scale"
+  bottom: "res4_2a_1_3x3_s1"
+  top: "res4_2a_1_3x3_s1"
+  scale_param {
+    bias_term: true
+  }
 }
 layer {
   name: "res4_2a_2_relu"
@@ -557,6 +665,15 @@ layer {
   type: "BatchNorm"
   bottom: "res4_2"
   top: "bn_5"
+}
+layer {
+  name: "scale_5"
+  type: "Scale"
+  bottom: "bn_5"
+  top: "bn_5"
+  scale_param {
+    bias_term: true
+  }
 }
 layer {
   name: "relu_5"
