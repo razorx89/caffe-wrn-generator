@@ -21,7 +21,7 @@ __WRN-16-4 with Dropout for CIFAR-100:__
 Command: `python generate.py cifar100 2,2,2 4 --dropout=0.3`  
 Output: cifar100_WRN-16-4_dropout_train_val.prototxt
 
-__WRN-37-2 for ImageNet with Bottleneck Residual Units:  
+__WRN-37-2 for ImageNet with Bottleneck Residual Units:__  
 Command: `python generate.py imagenet 3,4,6,3 2 --bottleneck`  
 Output: imagenet_WRN-37-2_train_val.prototxt
 
