@@ -21,9 +21,9 @@ __WRN-16-4 with Dropout for CIFAR-100:__
 Command: `python generate.py cifar100 2,2,2 4 --dropout=0.3`  
 Output: cifar100_WRN-16-4_dropout_train_val.prototxt
 
-__WRN-37-2 for ImageNet with Bottleneck Residual Units:__  
-Command: `python generate.py imagenet 3,4,6,3 2 --bottleneck`  
-Output: imagenet_WRN-37-2_train_val.prototxt
+__WRN-53-2 for ImageNet with Bottleneck Residual Units:__  
+Command: `python generate.py imagenet 3,4,6,3 2 --bottleneck-resunit`  
+Output: imagenet_WRN-53-2_bottleneck_train_val.prototxt
 
 For more customization options check the possible arguments with
 `python generate.py --help`.
@@ -31,7 +31,6 @@ For more customization options check the possible arguments with
 Notes
 -----
 * First release only used BatchNormLayer without ScaleLayer
-* ToDo: Generate both train_val and deploy prototxt files
 
 References
 ----------
