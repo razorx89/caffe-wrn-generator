@@ -4,7 +4,7 @@ Caffe Wide-Residual-Network (WRN) Generator
 This generator is a reimplementation of Wide Residual Networks (WRN) [[1]](#ref1).
 Full-Pre-Activation Residual Units from [[2]](#ref2) are used with two
 convolutional units of size 3x3 per residual unit. Bottleneck
-residual units (3 convolutional layers: 1x1, 3x3, 1x1) are available by using `--bottleneck`. 
+residual units (3 convolutional layers: 1x1, 3x3, 1x1) are available by using `--bottleneck-resunit`. 
 Currently the generator is implemented for CIFAR-10/CIFAR-100 (32x32 pixels) and ImageNet 
 (224x224 pixels).
 
